@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 1rem;
+}
+
+.nav {
+  font-size: 1.3rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 0.7rem;
+  font-weight: 500;
+}
+
+.nav-list-item {
+  transition: 0.3s ease;
+}
+
+.nav-list-item:hover {
+  color: rgb(255, 255, 255, 0.75);
+}
+
+.socials-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials-list-item {
+  width: 2rem;
+  height: 2rem;
+  transition: 0.5s ease;
+}
+
+.socials-list-item:hover {
+  transform: scale(1.2);
+}
