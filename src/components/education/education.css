@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 32px 0;
+}
+
+.education-title {
+  margin-right: auto;
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(175, 175, 175, 1) 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  font-size: 1.3rem;
+}
+
+.expandbutton-list-item {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr 2fr 1.1fr;
+  align-items: center;
+  column-gap: 3.4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f0f8ff;
+}
+
+.expandbutton-list-item:last-child {
+  border-bottom: none;
+}
+
+.education-status {
+  justify-self: center;
+}
+
+.education-status-link,
+.education-program-link {
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  border-bottom: 1px solid #f0f8ff;
+}
+
+
+.education-status-link:hover,
+.education-program-link:hover {
+  color: rgb(255, 255, 255, 0.75);
+  border-color: rgb(255, 255, 255, 0.75);
+}
+
+.education-specification {
+  font-size: 1.3rem;
+}
