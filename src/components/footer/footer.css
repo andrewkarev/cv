@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+.footer {
+  display: flex;
+  padding-top: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.socials-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socials-list-item {
+  width: 2rem;
+  height: 2rem;
+  transition: 0.5s ease;
+}
+
+.socials-list-item:hover {
+  transform: scale(1.2);
+}

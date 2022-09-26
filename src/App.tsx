@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Contacts from './components/contacts/Contacts';
 import Education from './components/education/Education';
+import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Projects from './components/projects/Projects';
@@ -19,6 +20,7 @@ const App = () => {
         <Projects />
         <Contacts />
       </main>
+      <Footer />
     </div>
   );
 }
