@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Contacts from './components/contacts/Contacts';
 import Education from './components/education/Education';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
@@ -16,6 +17,7 @@ const App = () => {
         <Technologies />
         <Education />
         <Projects />
+        <Contacts />
       </main>
     </div>
   );
