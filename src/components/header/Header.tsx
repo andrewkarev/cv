@@ -1,19 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.css';
 import { AiFillGithub, AiFillCode, AiFillLinkedin } from "react-icons/ai";
 
 const Header = () => {
+  const navItems = ['About', 'Technologies', 'Education', 'Projects', 'Contacts'];
+
+  const [isBurgerOpened, setIsBurgerOpened] = useState(false);
+
+  const toggleBurgerMenu = () => {
+    const body = document.querySelector('body');
+
+    if (!body) return;
+
+    if (!isBurgerOpened) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+
+    setIsBurgerOpened(!isBurgerOpened);
+  };
+
+  const navLinks = navItems.map((item) => {
+    return (
+      <li className="nav-list-item" key={item}>
+        <a className="nav-list-link" href={`#${item.toLowerCase()}`} onClick={toggleBurgerMenu} key={item}>{item}</a>
+      </li>
+    );
+  });
+
   return (
     <header className="header">
-      <nav className="nav">
+      <nav className={`${isBurgerOpened ? 'nav opened' : 'nav'}`}>
         <ul className="nav-list">
-          <a href="#about"><li className="nav-list-item">About</li></a>
-          <a href="#skills"><li className="nav-list-item">Skills</li></a>
-          <a href="#education"><li className="nav-list-item">Education</li></a>
-          <a href="#projects"><li className="nav-list-item">Projects</li></a>
-          <a href="#contacts"><li className="nav-list-item">Contacts</li></a>
+          {navLinks}
         </ul>
       </nav>
+      <div
+        className={`${isBurgerOpened ? 'burger opened' : 'burger'}`}
+        onClick={toggleBurgerMenu}>
+        <div className="burger-line"></div>
+        <div className="burger-line"></div>
+        <div className="burger-line"></div>
+      </div>
       <ul className="socials-list">
         <a href="https://github.com/andrewkarev">
           <li className="socials-list-item">
@@ -31,6 +60,7 @@ const Header = () => {
           </li>
         </a>
       </ul>
+      {isBurgerOpened && <div className="bg-placeholder" onClick={toggleBurgerMenu}></div>}
     </header>
   );
 };

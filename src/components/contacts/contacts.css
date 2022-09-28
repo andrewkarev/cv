@@ -30,6 +30,12 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+.contacts-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .contact-link {
   display: block;
   font-size: 1.2rem;
@@ -40,4 +46,20 @@
 
 .contact-link:hover {
   color: #ffffff;
+}
+
+@media (max-width: 680px) {
+  .contacts-title {
+    margin: 0 auto;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contacts-list-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

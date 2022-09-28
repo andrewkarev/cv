@@ -5,6 +5,7 @@ const Contacts = () => {
   return (
     <section className="contacts" id="contacts">
       <h2 className="contacts-title">Contacts</h2>
+      <p className="contacts-description">You can reach me with:</p>
       <ul className="contacts-list">
         <li className="contacts-list-item">
           <h3 className="contact-title">Telegram</h3>

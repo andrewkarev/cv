@@ -99,3 +99,41 @@
   background-color: #00ff95;
   color: #000;
 }
+
+@media (max-width: 889px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 680px) {
+  .projects-title {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 499px) {
+  .project {
+    gap: 1rem;
+    width: 300px;
+  }
+
+  .project-btns-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .project {
+    height: 420px;
+  }
+}
+
+@media (max-width: 387px) {
+  .project {
+    width: 100%;
+  }
+}

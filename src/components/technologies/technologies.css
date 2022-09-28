@@ -50,3 +50,29 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+@media (max-width: 849px) {
+  .technologies-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .technologies-title {
+    margin: 0 auto;
+  }
+
+  .technologies-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .technologies-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .technology {
+    flex-direction: row;
+  }
+}

@@ -48,6 +48,7 @@
 
 .education-status-link,
 .education-program-link {
+  display: block;
   padding-bottom: 5px;
   transition: 0.3s ease;
   font-family: "Ubuntu", sans-serif;
@@ -63,4 +64,26 @@
 
 .education-specification {
   font-size: 1.3rem;
+}
+
+.education-program {
+  justify-self: start;
+}
+
+@media (max-width: 767px) {
+  .expandbutton-list-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 0.7rem;
+  }
+
+  .education-status {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 680px) {
+  .education-title {
+    text-align: center;
+  }
 }

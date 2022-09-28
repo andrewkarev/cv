@@ -8,3 +8,14 @@
   padding: 1rem 2rem;
   color: #f0f8ff;
 }
+
+.page-content {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+@media (max-width: 680px) {
+  .App {
+    padding: 1rem 3.5rem;
+  }
+}
