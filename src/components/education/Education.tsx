@@ -3,12 +3,16 @@ import './education.css';
 import educationData from './education-data';
 
 const Education = () => {
-  const educationDataList = educationData.map((educationItem) => {
+  const educationDataList = educationData.map((educationItem, i) => {
     return (
-      <li className="expandbutton-list-item" key={educationItem.name}>
+      <li className="education-list-item" key={educationItem.name}>
         <p className="education-term">{educationItem.term}</p>
         <p className="education-status">
-          <a className="education-status-link" href={educationItem.certificate}>{educationItem.status}</a>
+          <a
+            className={`${!i ? 'education-status-link disabled' : 'education-status-link'}`}
+            href={educationItem.certificate}>
+            {educationItem.status}
+          </a>
         </p>
         <h3 className="education-specification">{educationItem.name}</h3>
         <p className="education-program">

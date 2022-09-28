@@ -49,7 +49,7 @@ const Header = () => {
             <AiFillGithub size="2rem" />
           </li>
         </a>
-        <a href="/">
+        <a href="https://linkedin.com/in/андрей-карев-62203a252">
           <li className="socials-list-item">
             <AiFillLinkedin size="2rem" />
           </li>
@@ -60,7 +60,7 @@ const Header = () => {
           </li>
         </a>
       </ul>
-      {isBurgerOpened && <div className="bg-placeholder" onClick={toggleBurgerMenu}></div>}
+      {isBurgerOpened && <div className="overlay" onClick={toggleBurgerMenu}></div>}
     </header>
   );
 };
