@@ -24,7 +24,10 @@ const Header = () => {
   const navLinks = navItems.map((item) => {
     return (
       <li className="nav-list-item" key={item}>
-        <a className="nav-list-link" href={`#${item.toLowerCase()}`} onClick={toggleBurgerMenu} key={item}>{item}</a>
+        <a className="nav-list-link"
+          href={`#${item.toLowerCase()}`}
+          onClick={isBurgerOpened ? toggleBurgerMenu : undefined}
+          key={item}>{item}</a>
       </li>
     );
   });
