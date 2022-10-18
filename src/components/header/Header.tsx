@@ -1,21 +1,27 @@
-import React, { useState } from 'react';
-import './header.css';
+import React, { useState } from "react";
+import "./header.css";
 import { AiFillGithub, AiFillCode, AiFillLinkedin } from "react-icons/ai";
 
 const Header = () => {
-  const navItems = ['About', 'Technologies', 'Education', 'Projects', 'Contacts'];
+  const navItems = [
+    "About",
+    "Technologies",
+    "Education",
+    "Projects",
+    "Contacts",
+  ];
 
   const [isBurgerOpened, setIsBurgerOpened] = useState(false);
 
   const toggleBurgerMenu = () => {
-    const body = document.querySelector('body');
+    const body = document.querySelector("body");
 
     if (!body) return;
 
     if (!isBurgerOpened) {
-      body.style.overflow = 'hidden';
+      body.style.overflow = "hidden";
     } else {
-      body.style.overflow = 'auto';
+      body.style.overflow = "auto";
     }
 
     setIsBurgerOpened(!isBurgerOpened);
@@ -24,24 +30,27 @@ const Header = () => {
   const navLinks = navItems.map((item) => {
     return (
       <li className="nav-list-item" key={item}>
-        <a className="nav-list-link"
+        <a
+          className="nav-list-link"
           href={`#${item.toLowerCase()}`}
           onClick={isBurgerOpened ? toggleBurgerMenu : undefined}
-          key={item}>{item}</a>
+          key={item}
+        >
+          {item}
+        </a>
       </li>
     );
   });
 
   return (
     <header className="header">
-      <nav className={`${isBurgerOpened ? 'nav opened' : 'nav'}`}>
-        <ul className="nav-list">
-          {navLinks}
-        </ul>
+      <nav className={`${isBurgerOpened ? "nav opened" : "nav"}`}>
+        <ul className="nav-list">{navLinks}</ul>
       </nav>
       <div
-        className={`${isBurgerOpened ? 'burger opened' : 'burger'}`}
-        onClick={toggleBurgerMenu}>
+        className={`${isBurgerOpened ? "burger opened" : "burger"}`}
+        onClick={toggleBurgerMenu}
+      >
         <div className="burger-line"></div>
         <div className="burger-line"></div>
         <div className="burger-line"></div>
@@ -52,7 +61,7 @@ const Header = () => {
             <AiFillGithub size="2rem" />
           </li>
         </a>
-        <a href="https://linkedin.com/in/андрей-карев-62203a252">
+        <a href="https://www.linkedin.com/in/andrew-karev-62203a252/">
           <li className="socials-list-item">
             <AiFillLinkedin size="2rem" />
           </li>
@@ -63,7 +72,9 @@ const Header = () => {
           </li>
         </a>
       </ul>
-      {isBurgerOpened && <div className="overlay" onClick={toggleBurgerMenu}></div>}
+      {isBurgerOpened && (
+        <div className="overlay" onClick={toggleBurgerMenu}></div>
+      )}
     </header>
   );
 };

@@ -1,5 +1,5 @@
-import React from 'react';
-import './footer.css';
+import React from "react";
+import "./footer.css";
 import { AiFillGithub, AiFillCode, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
             <AiFillGithub size="2rem" />
           </li>
         </a>
-        <a href="https://linkedin.com/in/андрей-карев-62203a252">
+        <a href="https://www.linkedin.com/in/andrew-karev-62203a252/">
           <li className="socials-list-item">
             <AiFillLinkedin size="2rem" />
           </li>
