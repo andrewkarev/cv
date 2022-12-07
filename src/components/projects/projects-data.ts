@@ -7,8 +7,28 @@ import CSS_SLIDER_IMG from "../../assets/images/projects/CSS-slider.webp";
 import PORTFOLIO_IMG from "../../assets/images/projects/portfolio.webp";
 import VIDEO_PLAYER_IMG from "../../assets/images/projects/HTML5-video-player.webp";
 import TIC_TAC_TOE_IMG from "../../assets/images/projects/tic-tac-toe.webp";
+import REACT_APP from "../../assets/images/projects/React-app.webp";
+import TASK_MANAGER from "../../assets/images/projects/task-manager.webp";
 
 const projectsData = [
+  {
+    title: "Task Manager",
+    description:
+      "An app that helps a person or team keep track of their workflow",
+    technologies: ["React", "Redux Toolkit"],
+    code: "https://github.com/andrewkarev/project-management-app/tree/develop",
+    deploy: "https://rss-project-management-app.netlify.app/",
+    img: TASK_MANAGER,
+  },
+  {
+    title: "React app",
+    description:
+      "React/Redux app with example of the Interaction with Restful API",
+    technologies: ["React", "Redux Toolkit", "React Hook Form"],
+    code: "https://github.com/andrewkarev/RSS-React-tasks/tree/redux",
+    deploy: "https://rss-react2022q3.netlify.app/",
+    img: REACT_APP,
+  },
   {
     title: "EasyLang",
     description:
