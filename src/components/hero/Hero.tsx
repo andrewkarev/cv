@@ -9,11 +9,11 @@ const Hero = () => {
       <section className="hero-section">
         <h1 className="app-title">Welcome</h1>
         <p className="app-description">
-          My name is Andrew and I'm Front-end Developer. I'm familiar with
+          My name is Andrew and I'm a Front-end Developer. I'm familiar with
           Agile. I have knowledge of tools for creating web applications. I have
-          experience in creating applications applying best coding practice like
-          DRY, KISS and YAGNI. I'm interested in gaining knowledge and applying
-          them to the real projects. At the moment i'm learning Node.js and
+          experience in creating applications applying the best coding practice
+          like DRY, KISS and YAGNI. I'm interested in gaining knowledge and
+          applying them in real projects. At the moment I'm learning Node.js and
           looking forward to working in teams as well as individually.
         </p>
         <a className="learn-more-btn" href={CV_PDF_LINK} download={true}>
